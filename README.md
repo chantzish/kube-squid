@@ -13,7 +13,7 @@ ibmcloud cs clusters
 # replace with cluster name
 ibmcloud ks cluster config --cluster <scndcluster>
 # export according to last command output
-export KUBECONFIG=/home/chantzish/.bluemix/plugins/container-service/clusters/<scndcluster?/kube-config-mil01-scndcluster.yml
+export KUBECONFIG=/home/chantzish/.bluemix/plugins/container-service/clusters/<scndcluster>/kube-config-mil01-scndcluster.yml
 # check worker is working and get external ip
 ibmcloud cs workers scndcluster
 kubectl run guestbook --image=chantzish/kube-squid
