@@ -1,5 +1,5 @@
 How to install squid on kubernetes
-
+```
 # workaround an error with gpg after the command `add-apt-repository -y ppa:git-core/ppa` in the idt-installer script
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E1DD270288B4E6030699E45FA1715D88E1DF1F24
 curl -sL https://ibm.biz/idt-installer | bash
@@ -22,3 +22,4 @@ kubectl get pod
 kubectl expose deployment guestbook --type="NodePort" --port=3128
 # get the node port
 kubectl get service guestbook
+```
